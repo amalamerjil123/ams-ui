@@ -106,11 +106,11 @@ webApp
 																			.pluck(
 																					std,
 																					'department')));
-													console
-															.log($scope.deptNames);
+													
+															console.log($scope.deptNames);
 
-													$http
-															.get(
+													
+															$http.get(
 																	$scope.urlBase
 																			+ '/attendance/Student/batch/'
 																			+ $scope.batchId
