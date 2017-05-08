@@ -1,0 +1,121 @@
+<!-- <div ng-include src="'app/views/header.html'"></div> -->
+<!-- <div>
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" style="color: white;">AMS</a>
+			</div>
+		</div>
+	</nav>
+</div> -->
+
+<!-- <div class="container-fluid">
+
+	<div class="row">
+		<div class="col-md-4">
+			<span style="color: red" ng-if="error==true">Invalid UserName
+				or Password</span>
+			<div class="portlet-title">
+				<div class="page-header">
+					<h3>Login</h3>
+				</div>
+			</div>
+			<div class="portlet-body">
+				<form>
+					<div class="form-group">
+
+						<label for="userName">EmailId :</label> <input type="email"
+							class="form-control" name="emailId" placeholder="Enter emailId"
+							ng-model="userName" autofocus="autofocus" required="required"
+							id="emailId" value="" />
+					</div>
+
+					<div class="form-group">
+						<label for="password">Password :</label> <input type="password"
+							class="form-control" name="password" ng-model="password"
+							placeholder="Enter Password" required="required" id="password"
+							value="" />
+					</div>
+					<div class="form-group">
+						<button type="submit" name="add" class="btn btn-success"
+							id="addLoginBtn" ng-click="login(userName)">SIGN IN</button>
+
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div> -->
+
+<div class="container-fluid">
+
+	<div class="row">
+		<div class="col-md-4">
+			<span style="color: red" ng-if="error==true">Invalid UserName
+				or Password</span>
+			<div class="portlet-title">
+				<div class="page-header">
+					<h3>Login</h3>
+				</div>
+			</div>
+			<div class="portlet-body">
+				<form>
+					<div class="form-group">
+						<label for="userName">EmailId</label> <span class="req">*</span>:<input
+							type="email" class="form-control" name="emailId"
+							placeholder="Enter emailId" ng-model="userName"
+							autofocus="autofocus" id="emailId" value="" /> <span
+							ng-show="form.email.$dirty && form.email.$error.required">Email
+							is required</span>
+					</div>
+
+					<div class="form-group">
+						<label for="password">Password</label> <span class="req">*</span>:<input
+							type="password" class="form-control" name="password"
+							ng-model="password" placeholder="Enter Password" id="password"
+							value="" /> <span
+							ng-show="form.password.$dirty && form.password.$error.required">Password
+							is required</span>
+					</div>
+					<div class="form-group">
+						<button type="submit" name="add" class="btn btn-success"
+							id="addLoginBtn" ng-click="login(userName)">SIGN IN</button>
+
+					</div>
+				</form>
+
+				<!-- 				<form ng-submit="submit()" name="form"
+					ng-controller="LoginController">
+					<div>
+
+						USERNAME
+						<div class="form-group"
+							ng-class="{ 'has-error' : userForm.username.$invalid && !userForm.username.$pristine }">
+							<label>Username</label> <input type="text" name="username"
+								class="form-control" ng-model="user.username" ng-minlength="3"
+								ng-maxlength="8">
+							<p ng-show="userForm.username.$error.minlength"
+								class="help-block">Username is too short.</p>
+							<p ng-show="userForm.username.$error.maxlength"
+								class="help-block">Username is too long.</p>
+						</div>
+
+						EMAIL
+						<div class="form-group"
+							ng-class="{ 'has-error' : userForm.email.$invalid && !userForm.email.$pristine }">
+							<label>Email</label> <input type="email" name="email"
+								class="form-control" ng-model="user.email">
+							<p ng-show="userForm.email.$invalid && !userForm.email.$pristine"
+								class="help-block">Enter a valid email.</p>
+						</div>
+
+					</div>
+
+					<div>
+						<button type="submit">Submit</button>
+					</div>
+				</form> -->
+			</div>
+		</div>
+	</div>
+</div>
